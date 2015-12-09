@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="Panel1" runat="server" BackColor="#66CCFF">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/jamk_logo.png" Height="100px" />
+        </asp:Panel>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+    </form>
+    <footer>
+        <section class="lower">
+            <div class="wrap">
+                <div class="columns">
+                    <div class="col3">
+                        <div class="contactinfo">
+                            <div style="white-space: nowrap;">Pl 207 | 40101 Jyväskylä</div>
+                            <div style="white-space: nowrap;">puh. +358 20 743 8100</div>
+                            <div style="white-space: nowrap;">fax. +358 14 449 9694</div>
+                        </div>
+                    </div>
+                    <div class="col5">
+                        <ul class="footermenu">
+                            <li><a href="/fi/Yhteystiedot/Henkilohaku/">Henkilökunnan yhteystiedot</a></li>
+                            <li><a href="/fi/Yhteystiedot/Pysakointi/">Pysäköinti</a></li>
+                            <li><a href="/fi/Yhteystiedot/">Osoitteet</a></li>
+                            <li><a href="/fi/Tietoa-JAMKista/Tietoa-sivuista/">Tietoa sivuista</a></li>
+                            <li><a href="/fi/Yhteystiedot/hankinnat-ja-laskutus/">Hankinnat ja laskutus</a></li>
+                            <li><a href="/fi/Tietoa-JAMKista/Rekisteriseloste/">Rekisteriseloste</a></li>
+                            <li><a href="/fi/Palvelut/kirjasto/Etusivu/">Kirjasto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
